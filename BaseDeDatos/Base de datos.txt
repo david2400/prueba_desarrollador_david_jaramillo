@@ -1,0 +1,28 @@
+
+CREATE DATABASE pruebassy;
+
+CREATE TABLE 'usuario' (
+  'consec' int(11) PRIMARY KEY AUTO_INCREMENT,
+  'identificacion' varchar(45) DEFAULT NULL,
+  'nombres' varchar(45) DEFAULT NULL,
+  'apellidos' varchar(45) DEFAULT NULL,
+  'fecnacimiento' date DEFAULT NULL,
+  'genero' varchar(45) DEFAULT NULL,
+  'tipodoc' varchar(45) DEFAULT NULL,
+  'estado' varchar(45) DEFAULT 'A',
+) 
+
+
+CREATE TABLE 'contacto' (
+  'consec' int(11) PRIMARY KEY AUTO_INCREMENT,
+  'nombre' varchar(45),
+  'numcontac' varchar(45),
+  'tiponum' varchar(45),
+  'parentesco' varchar(45),
+  'usuario' int(11),
+  'estado' varchar(1) DEFAULT 'A',
+  
+) 
+
+
+ALTER TABLE contacto CONSTRAINT 'contacto_ibfk_1' FOREIGN KEY ('usuario') REFERENCES 'usuario' ('consec')

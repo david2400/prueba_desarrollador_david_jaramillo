@@ -1,0 +1,52 @@
+
+html *
+{
+    font-family: "Open Sans", sans-serif !important;
+    /*font-size: 1rem !important;*/
+    /*color: #333 !important;*/
+}
+
+
+.ui-dialog .ui-dialog-titlebar-close {
+    display: none !important;
+}
+
+ .ui-dialog { z-index: 1050 !important ;}
+
+ .ui-widget-overlay { opacity: .60;filter:Alpha(Opacity=60); }
+
+
+.table_align_center{
+	text-align: center;
+}
+
+.table_align_right{
+	text-align: right;
+}
+
+.hideElement{
+	display: none;
+}
+
+.showElement{
+	display: block;
+}
+
+table thead th{
+	text-align: center;
+}
+
+table{
+	color: black;
+}
+
+table.dataTable tbody tr.selected, table.dataTable tbody th.selected, table.dataTable tbody td.selected{
+	color: black;
+}
+
+.context-menu-list {
+	z-index: 10 !important;
+}
+.select2-search__field{
+	    height: 2.5em !important;
+}
